@@ -38,11 +38,6 @@ array $options : optional option to pdf.js viewer
       'direction'=>'ltr',
 
     // Button visible state
-
-      'sideBarOpen'=>false,
-        // ltr = left to right, rtl=right to left
-      'direction'=>'ltr',
-
       'buttons'=>array(
         'sidebarToggle'=>true,
         'viewFind'=>true,
