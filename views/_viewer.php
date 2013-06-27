@@ -37,8 +37,8 @@ limitations under the License.
 
     <link rel="stylesheet" href="<?php echo $baseUrl; ?>/web/yii_viewer.css"/>
 <!--#if !PRODUCTION-->
-    <link rel="resource" type="application/l10n" href="<?php echo $baseUrl; ?>/locale.properties"/>
-<!--#endif-->
+   <link rel="resource" type="application/l10n" href="<?php echo $baseUrl; ?>/l10n/<?php echo Yii::app()->language; ?>/viewer.properties"/>
+   <!--#endif-->
 
 <!--#if !(FIREFOX || MOZCENTRAL || CHROME)-->
     <script type="text/javascript" src="<?php echo $baseUrl; ?>/web/compatibility.js"></script>
