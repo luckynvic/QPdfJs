@@ -3,15 +3,16 @@
 pdf.js wrapper for Yii Framework
 
 ## Feature
-Embeded pdf file in your web by pdf.js library
+Embedded pdf file in your web using pdf.js library.
+
 
 ## Requirements 
 * [Yii Framework](http://yiiframework.com/) - Yii 1.1 or above
 * [pdf.js](https://github.com/mozilla/pdf.js)
 
 ## Installing and configuring
-* Download and extract to folder extension.
-* Download [pdf.js](https://github.com/mozilla/pdf.js), and copy all pdf.js library to extension assets. There are several library was modified for Yii Framework with name yii_* in assets/web/ inlcude in this extension.
+* Download and extract to extension folder.
+* Download latest [pdf.js](https://github.com/mozilla/pdf.js), and copy all files to pdfJs/assets folder. There are several libraries were modified for Yii Framework with prefix yii_* in assets/web/ include in this extension. Overwrite assets/web folder but make sure if yii_* files is not overwritten.
 
 ## Usage
 In your view
