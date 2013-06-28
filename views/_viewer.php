@@ -6,7 +6,7 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  * @version 0.1
  */
-
+$langid=str_replace('_','-',Yii::app()->language);
 ?>
 <div id="QPdfJs_viewer" dir="<?php echo $options['direction']; ?>">
 
@@ -37,7 +37,7 @@ limitations under the License.
 
     <link rel="stylesheet" href="<?php echo $baseUrl; ?>/web/yii_viewer.css"/>
 <!--#if !PRODUCTION-->
-   <link rel="resource" type="application/l10n" href="<?php echo $baseUrl; ?>/l10n/<?php echo Yii::app()->language; ?>/viewer.properties"/>
+   <link rel="resource" type="application/l10n" href="<?php echo $baseUrl; ?>/l10n/<?php echo $langid; ?>/viewer.properties"/>
    <!--#endif-->
 
 <!--#if !(FIREFOX || MOZCENTRAL || CHROME)-->

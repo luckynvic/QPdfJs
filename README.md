@@ -1,7 +1,6 @@
 #QPdfJs
 
 pdf.js wrapper for Yii Framework
-
 ## Feature
 Embedded pdf file in your web using pdf.js library.
 
@@ -16,20 +15,24 @@ Embedded pdf file in your web using pdf.js library.
 
 ## Usage
 In your view
-```php
-<?php 
-  	$this->widget('ext.pdfJs.QPdfJs',array(
-			'url'=>$this->createUrl('/file/view',array('id'=>$model->id,'format'=>Files::PDF)),
-?>
-```
+
+~~~
+[php]
+
+$this->widget('ext.pdfJs.QPdfJs',array(
+  'url'=>$this->createUrl('/file/view',array('id'=>$model->id,'format'=>Files::PDF)),
+
+~~~
 
 ## Parameter
-string $url : pdf file url
-array $options : optional option to pdf.js viewer
+string `$url` : pdf file url  
+array `$options` : optional option to pdf.js viewer
 
-### Default option
-```php
+### Default options
 
+
+~~~
+[php]
  $options=Array(
     // Default sidebar state
       'sideBarOpen'=>false,
@@ -53,4 +56,10 @@ array $options : optional option to pdf.js viewer
         'viewBookmark'=>false,
         )
     );
-```
+
+~~~
+
+## Resource
+* [pdf.js](https://github.com/mozilla/pdf.js)
+* [Github](https://github.com/luckynvic/QPdfJs) - source
+* [Demo](http://dev.cyber313.com/ext_dev/index.php?r=site/pdfViewer)
